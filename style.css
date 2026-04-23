@@ -103,3 +103,46 @@ img {
     top: 0;
     z-index: 1000; /* Ensures header is above other content */
 }
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem; /* Space between navigation items */
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-nav a {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--text-color-dark);
+    padding: 5px 0; /* Add more vertical padding for clickable area */
+    position: relative; /* For underline effect */
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.main-nav a:hover::after,
+.main-nav a:focus::after {
+    width: 100%;
+}
+
+/* Mobile Navigation Toggle (Hidden by default on desktop) */
+.menu-toggle {
+    display: none; /* Hide on larger screens */
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001; /* Ensure toggle is above the menu */
+}
+
