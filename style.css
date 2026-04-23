@@ -145,4 +145,15 @@ img {
     padding: 10px;
     z-index: 1001; /* Ensure toggle is above the menu */
 }
+.logo-link {
+    display: flex; /* Align logo image better if it has space around it */
+    align-items: center;
+}
+
+.logo {
+    width: clamp(120px, 15vw, 180px); 
+    height: auto;
+    transition: var(--transition);
+
+}
 
