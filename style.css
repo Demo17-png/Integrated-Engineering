@@ -1,0 +1,31 @@
+.slider {
+      width: 100%;
+      overflow: hidden;
+      background: var(--secondary-color);
+      padding: 12px 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .slider-track {
+      display: flex;
+      white-space: nowrap;
+      animation: scroll 30s linear infinite;
+    }
+
+    .slider-text {
+      font-size: clamp(1rem, 4vw, 1.2rem); 
+      font-weight: 500;
+      color: var(--text-color-light);
+      padding-right: 50px; /* spacing between repeats */
+
+    }
+@keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
