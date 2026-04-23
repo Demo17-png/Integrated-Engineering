@@ -95,7 +95,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 35% 0.8rem 5%; /* FORMERLY 0.8rem 5% */
+    padding: 0.8rem 50% 0.8rem 5%; /* FORMERLY 0.8rem 5% */
     background-color: rgba(255, 255, 255, 0.95); /* Assuming a white background for the header */
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0,0,0,0.05); /* Subtle shadow for depth */
