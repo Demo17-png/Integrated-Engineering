@@ -207,6 +207,13 @@ h1 {
     text-align: center;
     font-size: clamp(2em, 4vw, 2.8em);
 }
+h2 {
+    padding: 40px 20px 10px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: clamp(1.5em, 4vw, 2em);
+}
 .profile {
     flex: 1;
     min-width: 280px; /* Minimum width before stacking */
@@ -233,4 +240,36 @@ h1 {
 .profile:hover {
      transform: translateY(-5px);
 }
+.counter {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.counter p {
+    font-size: clamp(1em, 2vw, 1.5em);
+    font-weight: 600;
+}
+#counter {
+    font-weight: 300;
+    font-size: clamp(0.8em, 2vw, 1.2em);
+    color: black;
+}
 
+.counter {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.counter p {
+    font-size: clamp(1em, 2vw, 1.5em);
+    font-weight: 600;
+}
+#counter {
+    font-weight: 400;
+    font-size: clamp(0.8em, 2vw, 1.2em);
+    color: var(--primary-color);
+}
