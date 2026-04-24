@@ -18,19 +18,47 @@ document.addEventListener('DOMContentLoaded', () => {
         menuToggle.setAttribute('aria-expanded', !isVisible);
     });
 });
-function animateValue(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    obj.innerHTML = Math.floor(progress * (end - start) + start);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
+const counter = document.querySelector(".counter");
+
+let hasStarted = false;
+let interval;
+
+function startCounter(el) {
+  const target = +el.getAttribute("data-target");
+  let count = 0;
+  const speed = 20;
+
+  interval = setInterval(() => {
+    count += Math.ceil(target / 100);
+
+    if (count >= target) {
+      count = target;
+      clearInterval(interval);
     }
-  };
-  window.requestAnimationFrame(step);
+
+    el.textContent = count;
+  }, speed);
 }
 
-const obj = document.getElementById("counter");
-animateValue(obj, 100, 17240, 1000); // Start at 0, stop at 1000, over 1 seconds
+function resetCounter(el) {
+  clearInterval(interval);
+  el.textContent = 0;
+}
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      if (!hasStarted) {
+        startCounter(counter);
+        hasStarted = true;
+      }
+    } else {
+      resetCounter(counter);
+      hasStarted = false;
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+observer.observe(counter);

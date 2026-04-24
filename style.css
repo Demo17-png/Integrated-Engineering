@@ -169,7 +169,7 @@ img {
 #banner figure img {
     float: left;
     width: 20%;
-    height: 90vh;
+    height: 100vh;
 }
 @keyframes slider {
     0% {
@@ -241,35 +241,9 @@ h2 {
      transform: translateY(-5px);
 }
 .counter {
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-.counter p {
-    font-size: clamp(1em, 2vw, 1.5em);
-    font-weight: 600;
-}
-#counter {
-    font-weight: 300;
-    font-size: clamp(0.8em, 2vw, 1.2em);
-    color: black;
-}
-
-.counter {
-    width: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.counter p {
-    font-size: clamp(1em, 2vw, 1.5em);
-    font-weight: 600;
-}
-#counter {
-    font-weight: 400;
-    font-size: clamp(0.8em, 2vw, 1.2em);
-    color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 30px auto;
+  text-align: center;
+  color: green;
 }
