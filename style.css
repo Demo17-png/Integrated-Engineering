@@ -308,7 +308,7 @@ textarea:focus-within {
     border-width: 3px;
 }
 button {
-    background-color: #5bd183;
+    background-color: green;
     border-radius: 20px;
     border-color: black;
     font-size: 22px;
