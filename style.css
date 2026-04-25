@@ -170,6 +170,7 @@ img {
 #banner figure img {
     float: left;
     width: 20%;
+    max-height: 80vh;
 }
 @keyframes slider {
     0% {
