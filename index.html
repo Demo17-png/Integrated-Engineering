@@ -42,8 +42,8 @@
    <ul id="primary-navigation" data-visible="false">
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="./board.html" target="_blank">Our Board</a></li>
-                <li><a href="./gallery.html" target="_blank">Gallery</a></li>
-                <li><a href="#inquiry">Inquiry</a></li>
+                <li><a href="#gallery" target="_blank">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
     </ul>
    </nav>
     <a href="/" class="logo-link" aria-label="Home">
@@ -81,7 +81,7 @@
   <h2>Completed Projects Since Inception</h2>
   <div class="counter" data-target="1472">0</div>
   <h2>Ongoing Projects</h2>
-  <section id="services-scope" class="services-overview">
+  <section id="gallery" class="services-overview">
              <div class="service-item">
                <img class="icon" src="./Images/bridge2.jpg">
                <h3>A 7-kilometer bridge construction</h3>
@@ -111,6 +111,16 @@
                <h3>Solar Panel Installation for a Modular Refinery</h3>
             </div>
         </section>
+        <form action="https://formspree.io/f/xdkzwdzw" method="POST">
+    <h4>Inquiry Form</h4>
+    <input type="text" name="first" placeholder="Full Name (Individual or Corporate)" autocomplete="off" required>
+     <input type="number" name="phone number" placeholder="Phone Number (Preferably WhatsApp-enabled)" autocomplete="off" required>
+      <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+      <br>
+      <textarea rows="5" cols="60" name="message" placeholder="Give us a summary of your request." autocomplete="off" required></textarea>
+      <br>
+      <button type="submit">Send Message</button>
+      </form>
      
     <script src="script.js"></script>
 </body>
