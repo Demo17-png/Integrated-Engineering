@@ -257,8 +257,9 @@ h2 {
     text-align: center;
 }
 .services-overview h3 {
-    color: red;
+    color: var(--text-color-dark);
     font-size: clamp(1.1em, 3vw, 1.6em);
+    font-weight: 400;
     margin-bottom: 40px;
     width: 100%;
 }
