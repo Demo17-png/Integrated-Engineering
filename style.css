@@ -247,3 +247,21 @@ h2 {
   text-align: center;
   color: green;
 }
+.services-overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Changed from space-around to center for better alignment */
+    padding: 60px 20px;
+    background-color: var(--background-light);
+    gap: 30px; /* Space between service items */
+    text-align: center;
+}
+.services-overview h3 {
+    color: red;
+    font-size: clamp(1.1em, 3vw, 1.6em);
+    margin-bottom: 40px;
+    width: 100%;
+}
+.service-item .icon {
+    border-radius: 10px;
+}
