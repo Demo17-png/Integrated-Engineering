@@ -394,6 +394,19 @@ button:hover {
 }
 /* For screens up to 768px wide (tablets and smaller) */
 @media (max-width: 768px) {
+    .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 30% 0.8rem 5%; /* FORMERLY 0.8rem 5% */
+    background-color: rgba(255, 255, 255, 0.95); /* Assuming a white background for the header */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+    position: sticky; /* Makes header stick to top */
+    top: 0;
+    z-index: 1000; /* Ensures header is above other content */
+}
+
     .logo {
         width: 300px;
     }
