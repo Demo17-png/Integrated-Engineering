@@ -79,7 +79,7 @@ img {
     height: auto;
     display: block; /* Removes extra space below images */
 }
- Screen Reader Only Class for Accessibility */
+ /* Screen Reader Only Class for Accessibility */
 .sr-only {
     position: absolute;
     width: 1px;
