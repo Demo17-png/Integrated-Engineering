@@ -321,6 +321,8 @@ button {
 button:hover {
     opacity: 80%;
     cursor: pointer;
+    background-color: rgb(35, 65, 128);
+    color:rgba(255, 255, 255, 0.95);
 
 }
 .site-footer {
