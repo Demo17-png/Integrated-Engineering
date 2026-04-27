@@ -460,12 +460,12 @@ button {
     .main-nav a::after {
         display: none;
     }
-    .profile p {
+    .profile p, .director P {
     color: var(--text-color-dark);
     font-size: 1.3em;
     margin-bottom: 30px;
     padding: 0 15px;
-    text-align: justify;
+    text-align: left;
 }
     .services-overview {
         padding: 40px 20px;
