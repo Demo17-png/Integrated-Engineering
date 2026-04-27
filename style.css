@@ -380,14 +380,22 @@ button:hover {
     opacity: 0.8;
     margin-top: 20px;
 }
-
+/* For screens up to 1024px wide (desktops, large tablets) */
+@media (max-width: 1024px) {
+    .logo {
+        width: 100px;
+    }
+    .main-nav ul {
+        gap: 20px;
+    }
+}
 /* For screens up to 768px wide (tablets and smaller) */
 @media (max-width: 768px) {
     .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 30% 0.8rem 5%; /* FORMERLY 0.8rem 5% */
+    padding: 0.8rem 55% 0.8rem 5%; /* FORMERLY 0.8rem 5% */
     background-color: rgba(255, 255, 255, 0.95); /* Assuming a white background for the header */
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0,0,0,0.05); /* Subtle shadow for depth */
@@ -397,7 +405,7 @@ button:hover {
 }
 
     .logo {
-        width: 300px;
+        width: 200px;
     }
     /* Mobile navigation */
     .menu-toggle {
