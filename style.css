@@ -380,18 +380,7 @@ button:hover {
     opacity: 0.8;
     margin-top: 20px;
 }
-/* For screens up to 1024px wide (desktops, large tablets) */
-@media (max-width: 1024px) {
-    .site-header {
-        padding: 10px;
-    }
-    .logo {
-        width: 100px;
-    }
-    .main-nav ul {
-        gap: 20px;
-    }
-}
+
 /* For screens up to 768px wide (tablets and smaller) */
 @media (max-width: 768px) {
     .site-header {
