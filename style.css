@@ -214,7 +214,7 @@ h2 {
     text-align: center;
     font-size: clamp(1.5em, 4vw, 2em);
 }
-.profile {
+.profile, .director {
     flex: 1;
     min-width: 280px; /* Minimum width before stacking */
     max-width: 900px;
@@ -224,21 +224,31 @@ h2 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
 }
-.profile img {
+.profile img, .director img {
     width: 80%;
     height: auto;
     margin: 0 auto 15px;
     border: 5px solid green;
     border-radius: 8px;
 }
-.profile p {
+.profile p, .director p {
     color: var(--text-color-dark);
     font-size: 1.3em;
     margin-bottom: 30px;
+    padding: 0 10px;
     text-align: justify;
 }
 .profile:hover {
      transform: translateY(-5px);
+}
+.directors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Changed from space-around to center for better alignment */
+    padding: 60px 20px;
+    background-color: var(--background-light);
+    gap: 30px; /* Space between director items */
+    text-align: center;
 }
 .counter {
   font-size: 3rem;
