@@ -269,12 +269,14 @@ h2 {
 form {
 background-color: #060616;
 padding-bottom: 10px;
+border: 5px;
+border-radius: 10px;
 }
 h4 {
     color: white;
     padding-top: 10px;
     text-align: center;
-    font-size: 60px;
+    font-size: clamp(1.7em, 3.5vw, 2.5em);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 input {
@@ -395,7 +397,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 55% 0.8rem 5%; /* FORMERLY 0.8rem 5% */
+    padding: 0.8rem 40% 0.8rem 5%; /* FORMERLY 0.8rem 5% */
     background-color: rgba(255, 255, 255, 0.95); /* Assuming a white background for the header */
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0,0,0,0.05); /* Subtle shadow for depth */
@@ -441,6 +443,13 @@ button:hover {
     .main-nav a::after {
         display: none;
     }
+    .profile p {
+    color: var(--text-color-dark);
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    text-align: justify;
+}
     .services-overview {
         padding: 40px 20px;
     }
@@ -450,6 +459,13 @@ button:hover {
      .footer-contact-info address,
     .footer-contact-info a {
         font-size: 0.9em;
+    }
+}
+
+/* For screens up to 680px wide (tablets and smaller) */
+@media (max-width: 680px) {
+    form input {
+        font-size: clamp(0.9em, 2vw, 1.7em);
     }
 }
 
