@@ -490,7 +490,16 @@ button:hover {
     text-align: center;
     font-size: clamp(1.5em, 3vw, 2.2em);
 }
-form input {
+form {
         font-size: clamp(0.8em, 2vw, 1.5em);
     }
+input {
+    width: 90%;
+    margin-left: 5%;
+    padding: 16px 16px;
+}
+textarea {
+    margin-left: 5%;
+    width: 90%;
+}
 }
