@@ -239,7 +239,6 @@ h2 {
     text-align: justify;
     hyphens: auto;
     word-spacing: -0.03em;
-    max-width: 650px;
 }
 .profile:hover {
      transform: translateY(-5px);
